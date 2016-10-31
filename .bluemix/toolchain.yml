@@ -23,9 +23,8 @@ repo:
 sample-build:
   service_id: pipeline
   parameters:
-    name: "{{name}}"
+    name: {{name}}
     v1-project: {{project-name}}
-     execute: false
     services: ["repo"]
   hidden: [form, description]
     
