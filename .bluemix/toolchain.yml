@@ -2,7 +2,7 @@
 name: Bluemix DevOps V1 to V2 Upgrade
 description: $file(description.md)
 
-template:
+toolchain:
   name: {{name}}
   description: {{description}}
   generator: migration-engine
