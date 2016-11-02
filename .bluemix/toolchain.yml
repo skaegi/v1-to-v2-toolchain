@@ -3,19 +3,19 @@ name: Bluemix DevOps V1 to V2 Upgrade
 description: $file(description.md)
 
 toolchain:
-  name: "{{name}}"
+  name: "{{projectName}}"
   description: "{{description}}"
   generator: migration-engine
   template:
-    v1-project: "{{project-name}}"
+    v1-projectId: "{{projectId}}"
 
 
 # Github repos
 repo:
   service_id: githubpublic
   parameters:
-    repo_name: "{{name}}"
-    repo_url: "{{repo_url}}"
+    repo_name: "{{projectName}}"
+    repo_url: "{{projectRepoUrl}}"
     type: link
     has_issues: true
 
@@ -23,8 +23,8 @@ repo:
 sample-build:
   service_id: pipeline
   parameters:
-    name: "{{name}}"
-    v1-project: "{{project-name}}"
+    name: "{{projectName}}"
+    v1-projectId: "{{projectId}}"
     services: ["repo"]
   hidden: [form, description]
     
