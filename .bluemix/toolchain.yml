@@ -1,0 +1,35 @@
+---
+name: Bluemix DevOps V1 to V2 Upgrade
+description: $file(description.md)
+
+toolchain:
+  name: "{{projectName}}"
+  description: "{{description}}"
+  generator: migration-engine
+  template:
+    v1-projectId: "{{projectId}}"
+
+
+# Github repos
+repo:
+  service_id: githubpublic
+  parameters:
+    repo_name: "{{projectName}}"
+    repo_url: "{{projectRepoUrl}}"
+    type: link
+    has_issues: true
+
+# Pipelines
+sample-build:
+  service_id: pipeline
+  parameters:
+    name: "{{projectName}}"
+    v1-projectId: "{{projectId}}"
+    services: ["repo"]
+  hidden: [form, description]
+    
+
+#Web IDE
+webide:
+  service_id: orion
+  
