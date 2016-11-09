@@ -26,6 +26,8 @@ sample-build:
     name: "{{projectName}}"
     v1-projectId: "{{projectId}}"
     services: ["repo"]
+    configuration: 
+     content: "{{pipelineContent}}"
   hidden: [form, description]
     
 
