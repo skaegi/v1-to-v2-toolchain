@@ -47,9 +47,9 @@ sample-build:
      source:
        environment: "{{pipelineEnv}}"
        version: "v1",
-	     pipelineUrl: "{{pipelineUrl}}"
-	     projectUrl: "{{projectUrl}}"
-	     showLink: true
+         pipelineUrl: "{{pipelineUrl}}"
+         projectUrl: "{{projectUrl}}"
+         showLink: true
        
 #Web IDE
 webide:
