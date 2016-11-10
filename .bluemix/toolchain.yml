@@ -44,8 +44,6 @@ sample-build:
     services: ["repo"]
     configuration: 
      content: "{{pipelineContent}}"
-  hidden: [form]
-    
 
 #Web IDE
 webide:
