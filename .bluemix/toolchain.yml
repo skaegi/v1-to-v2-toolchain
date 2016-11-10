@@ -20,7 +20,6 @@ description: "This sidebar is used to help walk the user through the update proc
 image: data:image/png;base64,$file(upgrade.png,base64)
 toolchain:
   name: "{{projectName}}"
-  description: "{{description}}"
   generator: migration-engine
   template:
     v1-projectId: "{{projectId}}"
