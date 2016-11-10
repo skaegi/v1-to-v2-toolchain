@@ -1,7 +1,22 @@
 ---
 name: Bluemix DevOps V1 to V2 Upgrade
-description: $file(description.md)
+description: "This sidebar is used to help walk the user through the update process and help the user to make the best choices for their particular situation. This is not simply a description of the process but instead a much more substantial how-to type document with links to blogs and more info.
+  
+  ### About Your Project
+  
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a augue erat. Donec ut nisl tincidunt, ornare arcu euismod, sodales lacus. Nullam interdum rutrum elementum. Nam vel pretium sem. Nunc rhoncus est fermentum ornare mattis. Aliquam sollicitudin nibh non sapien dictum malesuada. Duis lacinia dapibus lectus, vitae malesuada ligula. 
 
+  ### About the Update Process
+  
+  Integer varius magna luctus nisl ornare, nec lacinia enim fermentum. Nunc rhoncus imperdiet ligula ac elementum. Aliquam pulvinar, ante quis pharetra placerat, sapien leo iaculis purus, a ultricies lacus odio at nisi. Donec id sem in sem sagittis maximus at eu felis. Donec vel faucibus nunc. Quisque mi nisi, blandit id condimentum blandit, bibendum eu enim. Nullam vel ex vel est faucibus fringilla. Curabitur consequat mauris sit amet orci dignissim porttitor. Aliquam et libero neque. Nulla quis tincidunt urna. Pellentesque scelerisque cursus vu
+  
+  ### Caveats
+  
+  Duis vehicula nisi quis odio tincidunt, ut rutrum lacus euismod. Ut eu venenatis erat, ac ullamcorper ligula. Proin est diam, laoreet eu justo suscipit, pellentesque fringilla augue. Proin tortor turpis, lacinia sit amet feugiat sit amet, aliquet pulvinar nisi. Sed metus eros, porttitor sit amet accumsan quis, lacinia vitae ex. Mauris at risus aliquam, rhoncus mauris ut, faucibus orci. Sed vel ullamcorper sem, non elementum nibh. Proin hendrerit posuere dignissim. 
+  
+  ### More Info
+  
+  Phasellus nec tortor lectus. Nam nec lobortis ante. Vestibulum posuere eu nulla id scelerisque. Aenean iaculis nec est eu luctus. Duis id felis in turpis pharetra consectetur. Fusce eu elit suscipit, scelerisque dui sit amet, faucibus magna."
 toolchain:
   name: "{{projectName}}"
   description: "{{description}}"
@@ -28,7 +43,7 @@ sample-build:
     services: ["repo"]
     configuration: 
      content: "{{pipelineContent}}"
-  hidden: [form, description]
+  hidden: [form]
     
 
 #Web IDE
