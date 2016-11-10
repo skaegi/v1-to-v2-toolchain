@@ -46,7 +46,7 @@ sample-build:
      execute: false
      source:
        environment: "{{pipelineEnv}}"
-       version: "v1",
+       version: v1,
        pipelineUrl: "{{pipelineUrl}}"
        projectUrl: "{{projectUrl}}"
        showLink: true
