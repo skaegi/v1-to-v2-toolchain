@@ -43,7 +43,14 @@ sample-build:
     services: ["repo"]
     configuration: 
      content: "{{pipelineContent}}"
-
+     execute: false
+     source:
+       environment: "{{pipelineEnv}}"
+       version: "v1",
+	     pipelineUrl: "{{pipelineUrl}}"
+	     projectUrl: "{{projectUrl}}"
+	     showLink: true
+       
 #Web IDE
 webide:
   service_id: orion
