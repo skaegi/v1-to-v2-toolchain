@@ -23,7 +23,9 @@ toolchain:
   generator: migration-engine
   template:
     v1-projectId: "{{projectId}}"
-
+  required: 
+     - deploy
+     - repo
 
 # Github repos
 repo:
