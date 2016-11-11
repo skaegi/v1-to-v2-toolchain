@@ -49,13 +49,7 @@ build:
        version: v1,
        pipelineUrl: "{{pipelineUrl}}"
        projectUrl: "{{projectUrl}}"
-       showLink: true
-     env:
-       REPO: "repo"
-       CF_APP: "{{projectName}}"
-       CF_SPACE: dev
-       CF_ORGANIZATION: kalyan_prasad@in.ibm.com
-       CF_REGION_ID: ibm:yp:us-south
+       showLink: true     
        
 #Web IDE
 webide:
