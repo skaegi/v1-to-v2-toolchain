@@ -41,7 +41,6 @@ build:
   service_id: pipeline
   parameters:
     name: "{{projectName}}"
-    ui-pipeline: true
     v1-projectId: "{{projectId}}"
     services: ["repo"]
     configuration: 
