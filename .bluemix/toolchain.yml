@@ -57,7 +57,8 @@ build:
        version: v1,
        pipelineUrl: "{{pipelineUrl}}"
        projectUrl: "{{projectUrl}}"
-       showLink: true     
+       showLink: true 
+  hidden: [form, description]    
        
 #Web IDE
 webide:
