@@ -54,7 +54,7 @@ build:
       PROD_REGION_ID: "{{deploy.parameters.prod-region}}"
      source:
        environment: "{{pipelineEnv}}"
-       version: v1,
+       version: v1
        pipelineUrl: "{{pipelineUrl}}"
        projectUrl: "{{projectUrl}}"
        showLink: true 
