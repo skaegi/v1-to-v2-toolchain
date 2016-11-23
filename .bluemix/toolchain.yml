@@ -23,6 +23,7 @@ toolchain:
   generator: migration-engine
   template:
     v1-projectId: "{{projectId}}"
+    scheduledDate: "{{scheduledDate}}"
   required: 
      - deploy
      - repo
