@@ -49,10 +49,6 @@ build:
      execute: false
      env:
       REPO: "repo"
-      CF_APP_NAME: "{{deploy.parameters.prod-app-name}}"
-      PROD_SPACE_NAME: "{{deploy.parameters.prod-space}}"
-      PROD_ORG_NAME: "{{deploy.parameters.prod-organization}}"
-      PROD_REGION_ID: "{{deploy.parameters.prod-region}}"
      source:
        environment: "{{pipelineEnv}}"
        version: v1
@@ -64,12 +60,3 @@ build:
 #Web IDE
 webide:
   service_id: orion
-  
-#Deployment
-deploy:
-  schema: 
-    $ref: deploy.json
-  service-category: pipeline
-  parameters:
-    prod-app-name: "{{repo.parameters.repo_name}}"
-  
