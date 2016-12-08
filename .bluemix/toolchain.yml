@@ -18,6 +18,7 @@ description: "This sidebar is used to help walk the user through the update proc
   
   Phasellus nec tortor lectus. Nam nec lobortis ante. Vestibulum posuere eu nulla id scelerisque. Aenean iaculis nec est eu luctus. Duis id felis in turpis pharetra consectetur. Fusce eu elit suscipit, scelerisque dui sit amet, faucibus magna."
 image: data:image/png;base64,$file(upgrade.png,base64)
+binbash: "#!/bin/bash"
 toolchain:
   name: "{{projectName}}"
   generator: migration-engine
@@ -45,7 +46,7 @@ build:
     v1-projectId: "{{projectId}}"
     services: ["repo"]
     configuration: 
-     content: "{{pipelineContent}}"
+     content: "{{binbash}}{{pipelineContent}}"
      execute: false
      env:
       REPO: "repo"
