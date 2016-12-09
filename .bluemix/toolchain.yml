@@ -27,7 +27,6 @@ toolchain:
   required: 
      - deploy
      - repo
-  binbash: "#!/bin/bash"
 
 # Github repos
 repo:
@@ -46,7 +45,7 @@ build:
     v1-projectId: "{{projectId}}"
     services: ["repo"]
     configuration: 
-     content: "{{toolchain.binbash}}{{pipelineContent}}"
+     content: "{{pipelineContent}}"
      execute: false
      env:
       REPO: "repo"
