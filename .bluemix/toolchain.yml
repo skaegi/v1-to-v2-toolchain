@@ -1,22 +1,24 @@
 ---
-name: Bluemix DevOps V1 to V2 Upgrade
-description: "This sidebar is used to help walk the user through the update process and help the user to make the best choices for their particular situation. This is not simply a description of the process but instead a much more substantial how-to type document with links to blogs and more info.
+name: Project upgrade toolchain
+description: "
+  ### Toolchain Overview
+  A toolchain is an open, extensible system of tools that supports the development, deployment, and operations of an application. Move from a closed system of a few developer tools on DevOps Services to a toolchain that you can customize with tools from any company or team.
   
   ### About Your Project
+  Your project includes GitHub for both source control and work planning and management, a pipeline, and a web integrated development environment (IDE).
   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a augue erat. Donec ut nisl tincidunt, ornare arcu euismod, sodales lacus. Nullam interdum rutrum elementum. Nam vel pretium sem. Nunc rhoncus est fermentum ornare mattis. Aliquam sollicitudin nibh non sapien dictum malesuada. Duis lacinia dapibus lectus, vitae malesuada ligula. 
-
-  ### About the Update Process
+  ### About the Upgrade Process
+  When you create this toolchain, it is preconfigured with GitHub for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed.
   
-  Integer varius magna luctus nisl ornare, nec lacinia enim fermentum. Nunc rhoncus imperdiet ligula ac elementum. Aliquam pulvinar, ante quis pharetra placerat, sapien leo iaculis purus, a ultricies lacus odio at nisi. Donec id sem in sem sagittis maximus at eu felis. Donec vel faucibus nunc. Quisque mi nisi, blandit id condimentum blandit, bibendum eu enim. Nullam vel ex vel est faucibus fringilla. Curabitur consequat mauris sit amet orci dignissim porttitor. Aliquam et libero neque. Nulla quis tincidunt urna. Pellentesque scelerisque cursus vu
+  After you create the toolchain, use your DevOps Services project for reference purposes only. If you need to use the project for production purposes, delete this toolchain.
   
-  ### Caveats
-  
-  Duis vehicula nisi quis odio tincidunt, ut rutrum lacus euismod. Ut eu venenatis erat, ac ullamcorper ligula. Proin est diam, laoreet eu justo suscipit, pellentesque fringilla augue. Proin tortor turpis, lacinia sit amet feugiat sit amet, aliquet pulvinar nisi. Sed metus eros, porttitor sit amet accumsan quis, lacinia vitae ex. Mauris at risus aliquam, rhoncus mauris ut, faucibus orci. Sed vel ullamcorper sem, non elementum nibh. Proin hendrerit posuere dignissim. 
+  To get started, click **Create**.
   
   ### More Info
+  [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)
   
-  Phasellus nec tortor lectus. Nam nec lobortis ante. Vestibulum posuere eu nulla id scelerisque. Aenean iaculis nec est eu luctus. Duis id felis in turpis pharetra consectetur. Fusce eu elit suscipit, scelerisque dui sit amet, faucibus magna."
+  [Bluemix Continuous Delivery is now live](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
+  "
 image: data:image/png;base64,$file(upgrade.png,base64)
 toolchain:
   name: "{{projectName}}"
