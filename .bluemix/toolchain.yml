@@ -34,6 +34,7 @@ repo:
     repo_url: "{{projectRepoUrl}}"
     type: link
     has_issues: true
+  hidden: [form, description]       
 
 # Pipelines
 build:
