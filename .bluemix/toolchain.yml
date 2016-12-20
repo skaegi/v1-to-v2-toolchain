@@ -58,3 +58,11 @@ build:
 #Web IDE
 webide:
   service_id: orion
+
+#Github
+github:
+  schema:
+    $ref: github.json
+  service-category: githubpublic
+  parameters:
+    repo_url: "{{projectRepoUrl}}"
