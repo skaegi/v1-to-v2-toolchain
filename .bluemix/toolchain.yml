@@ -15,7 +15,7 @@ description: "
   [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)\n\n
   [Bluemix Continuous Delivery is now live](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)\n
   "
-image: data:image/png;base64,$file(upgrade.png,base64)
+image: data:image/svg+xml;base64,$file(toolchain.svg,base64)
 toolchain:
   name: "{{projectName}}"
   generator: migration-engine
