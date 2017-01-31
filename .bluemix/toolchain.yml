@@ -2,10 +2,12 @@
 name: Upgrade Project to Toolchain
 description: "
   A toolchain is an open, extensible system of tools that supports the development, deployment, and operations of an application.\n\n
-    \n
+
+
   #### About the Upgrade Process\n
   When you create this toolchain, it is preconfigured with GitHub for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.\n\n
-    \n
+
+
   #### More Info\n
   [Tutorial on upgrading Project to Toolchain](http://ibm.biz/DevOpsProjectUpgradeTutorial)\n\n
   [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)\n\n
