@@ -64,6 +64,6 @@ webide:
 github:
   schema:
     $ref: github.json
-  service-category: githubpublic
+  service-category: github_integrated
   parameters:
     repo_url: "{{projectRepoUrl}}"
