@@ -28,7 +28,7 @@ toolchain:
 
 # Github repos
 repo:
-  service_id: githubpublic
+  service_id: github_integrated
   parameters:
     repo_name: "{{projectName}}"
     repo_url: "{{projectRepoUrl}}"
