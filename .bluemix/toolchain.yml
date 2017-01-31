@@ -28,7 +28,7 @@ toolchain:
 
 # Github repos
 repo:
-  service_id: githubpublic
+  service_id: github_integrated
   parameters:
     repo_name: "{{projectName}}"
     repo_url: "{{projectRepoUrl}}"
@@ -64,6 +64,6 @@ webide:
 github:
   schema:
     $ref: github.json
-  service-category: githubpublic
+  service-category: github_integrated
   parameters:
     repo_url: "{{projectRepoUrl}}"
