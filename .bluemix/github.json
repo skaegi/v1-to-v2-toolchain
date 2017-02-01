@@ -20,7 +20,8 @@
       {
         "description": "Repository Name",
         "type": "string",
-        "key": "repo_name"
+        "key": "repo_name",
+        "readonly" : false  
        },  
       {
         "description": "Repository Type",
