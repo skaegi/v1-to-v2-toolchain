@@ -62,4 +62,5 @@ github:
     $ref: github.json
   service-category: hostedgit
   parameters:
-    repo_url: ""
+    repo_url: "{{projectRepoUrl}}"
+    repo_name: "{{repoName}}"
