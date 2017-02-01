@@ -27,12 +27,12 @@
         "description": "Repository Type",
         "type": "string",
         "key": "repo_type",
-        "readonly": "true"
+        "readonly": true
        }, {
       "description": "Source code import repository URL",
       "type": "string",
       "key": "repo_url",
-      "readonly": "true"
+      "readonly": true
      }
     ]
 }
