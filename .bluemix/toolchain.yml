@@ -60,6 +60,6 @@ webide:
 github:
   schema:
     $ref: github.json
-  service-category: githubpublic
+  service-category: hostedgit
   parameters:
     repo_url: ""
