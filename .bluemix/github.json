@@ -1,29 +1,38 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Github link",
-    "description": "Github link schema",
-    "longDescription": "Store your source code in an existing repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
+    "title": "New Git repository",
+    "description": "Git repository schema",
+    "longDescription": "Store your source code in a new git repository and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
-      "repo_url": {
+      "repo_name": {
           "type": "string"
       },
       "repo_type": {
         "type": "string",
-        "default": "Existing"
+        "default": "new"
+      },  
+      "repo_url": {
+          "type": "string"
       }
     },
     "form": [
       {
+        "description": "Repository Name",
+        "type": "string",
+        "key": "repo_name",
+        "readonly" : false  
+       },  
+      {
         "description": "Repository Type",
         "type": "string",
         "key": "repo_type",
-        "readonly": "true"
+        "readonly": true
        }, {
-      "description": "Link to the specified source repository URL",
+      "description": "Source code import repository URL",
       "type": "string",
       "key": "repo_url",
-      "readonly": "true"
+      "readonly": true
      }
     ]
 }
