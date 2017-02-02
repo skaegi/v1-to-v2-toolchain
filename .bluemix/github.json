@@ -5,33 +5,33 @@
     "longDescription": "Store your source code in a new git repository and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
-      "repo_type": {
+      "repo-type": {
         "type": "string",
         "default": "New"
       },   
-      "repo_name": {
+      "repo-name": {
           "type": "string"
       },       
-      "repo_url": {
+      "repo-url": {
           "type": "string"
       }
     },
+    "required": ["repo-type", "repo-name", "repo-url"],
     "form": [
       {
-        "description": "Repository Name",
+        "description": "New Repository Name",
         "type": "string",
-        "key": "repo_name",
-        "readonly" : false  
+        "key": "repo-name" 
        },  
       {
         "description": "Repository Type",
         "type": "string",
-        "key": "repo_type",
+        "key": "repo-type",
         "readonly": true
        }, {
       "description": "Source code import repository URL",
       "type": "string",
-      "key": "repo_url",
+      "key": "repo-url",
       "readonly": true
      }
     ]
