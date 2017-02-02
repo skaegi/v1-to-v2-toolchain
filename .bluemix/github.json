@@ -19,16 +19,17 @@
     "required": ["repo-name"],
     "form": [
       {
-        "description": "New Repository Name",
-        "type": "string",
-        "key": "repo-name" 
-       },  
-      {
         "description": "Repository Type",
         "type": "string",
         "key": "repo-type",
         "readonly": true
-       }, {
+       },
+      {
+        "description": "New Repository Name",
+        "type": "string",
+        "key": "repo-name" 
+       },  
+       {
       "description": "Source code import repository URL",
       "type": "string",
       "key": "repo-url",
