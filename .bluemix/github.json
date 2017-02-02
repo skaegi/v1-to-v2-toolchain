@@ -16,7 +16,7 @@
           "type": "string"
       }
     },
-    "required": ["repo-type", "repo-name", "repo-url"],
+    "required": ["repo-name"],
     "form": [
       {
         "description": "New Repository Name",
