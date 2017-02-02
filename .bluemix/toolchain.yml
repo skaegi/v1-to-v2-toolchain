@@ -63,4 +63,4 @@ github:
   service-category: hostedgit
   parameters:
     repo_url: "{{projectRepoUrl}}"
-    repo_name: "{{repName}}"
+    repo_name: "{{repoName}}"
