@@ -5,13 +5,13 @@
     "longDescription": "Store your source code in a new git repository and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
-      "repo_name": {
-          "type": "string"
-      },
       "repo_type": {
         "type": "string",
-        "default": "new"
-      },  
+        "default": "New"
+      },   
+      "repo_name": {
+          "type": "string"
+      },       
       "repo_url": {
           "type": "string"
       }
