@@ -8,7 +8,7 @@ description: "
   
   #### More Info\n
   [Tutorial: Upgrade your project to a toolchain](http://ibm.biz/DevOpsProjectUpgradeTutorial)\n\n
-  [Documentation: Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)\n\n
+  [Docs: Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)\n\n
   [Blog: Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)\n
   "
 image: data:image/svg+xml;base64,$file(toolchain.svg,base64)
