@@ -18,8 +18,7 @@
       "has_issues": {
 		 "title": "Enable GitHub Issues",
 		 "description": "Enable GitHub's Issues page for lightweight issue tracking.",
-		 "type": "boolean",
-		 "default": true
+		 "type": "boolean"
       }  
     },
     "form": [        
