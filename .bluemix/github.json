@@ -37,8 +37,5 @@
        	"type": "boolean",
        	"key": "has_issues"    
        }
-    ],
-    "actions": {
-		"create": []
-    }    
+    ]   
 }
