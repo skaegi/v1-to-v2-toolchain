@@ -13,11 +13,7 @@
         "default": "Existing"
       }
     },
-    "form": [
-      {
-        "type": "validator",
-        "url": "/devops/setup/bm-helper/github_helper.html"
-      },  
+    "form": [        
       {
         "description": "Repository Type",
         "type": "string",
