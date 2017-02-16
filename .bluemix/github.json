@@ -8,6 +8,9 @@
       "repo_url": {
           "type": "string"
       },
+      "existing_repo_url": {
+          "type": "string"        
+      },    
       "type": {
         "type": "string",
         "default": "Existing"
@@ -32,11 +35,11 @@
        }, {
       	"description": "Link to the specified source repository URL",
       	"type": "string",
-      	"key": "repo_url",
+      	"key": "existing_repo_url",
       	"readonly": true
        }
     ],
     "actions": {        
-        "create": ["repo_url"]
+        "update": ["repo_url"]
     }
 }
