@@ -30,7 +30,7 @@ repo:
     repo_name: "{{projectName}}"
     repo_url: "{{projectRepoUrl}}"
     type: link
-    has_issues: true
+    has_issues: {{github.parameters.has_issues}}
   hidden: [form, description]       
 
 # Pipelines
@@ -64,3 +64,4 @@ github:
   service-category: githubpublic
   parameters:
     repo_url: "{{projectRepoUrl}}"
+    has_issues: true
