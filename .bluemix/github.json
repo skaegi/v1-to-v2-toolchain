@@ -37,7 +37,11 @@
       	"type": "string",
       	"key": "existing_repo_url",
       	"readonly": true
-       }
+       }, {  
+	"description": "Enable GitHub's Issues page for lightweight issue tracking.",       
+       	"type": "boolean",
+	"key": "has_issues"   
+        }
     ],
     "actions": {        
         "update": ["repo_url"]
