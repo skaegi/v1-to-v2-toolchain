@@ -15,6 +15,10 @@
     },
     "form": [        
       {
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
+      {
         "description": "Repository Type",
         "type": "string",
         "key": "repo_type",
