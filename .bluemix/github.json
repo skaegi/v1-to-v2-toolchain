@@ -11,11 +11,7 @@
       "type": {
         "type": "string",
         "default": "Existing"
-      },
-      "has_issues": {
-	 "type": "boolean",
-	 "default": true
-      }  
+      } 
     },
     "form": [        
       {
@@ -32,11 +28,6 @@
       	"type": "string",
       	"key": "repo_url",
       	"readonly": true
-       }, {  
-	"description": "Enable GitHub's Issues page for lightweight issue tracking.",       
-       	"type": "boolean",
-       	"key": "has_issues",
-	"readonly": true       
        }
     ]   
 }
