@@ -39,6 +39,6 @@
        }
     ],
     "actions": {
-		"update": []
+		"create": []
     }    
 }
