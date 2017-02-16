@@ -64,3 +64,4 @@ github:
   service-category: githubpublic
   parameters:
     repo_url: "{{projectRepoUrl}}"
+    existing_repo_url: "{{projectRepoUrl}}"
