@@ -8,7 +8,7 @@
       "repo_url": {
           "type": "string"
       },
-      "repo_type": {
+      "type": {
         "type": "string",
         "default": "Existing"
       }
@@ -21,7 +21,7 @@
       {
         "description": "Repository Type",
         "type": "string",
-        "key": "repo_type",
+        "key": "type",
         "readonly": "true"
        }, {
       "description": "Link to the specified source repository URL",
