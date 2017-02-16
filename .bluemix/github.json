@@ -35,7 +35,8 @@
       	"readonly": true
        }, {           
        	"type": "boolean",
-       	"key": "has_issues"    
+       	"key": "has_issues",
+	"readonly": true       
        }
     ]   
 }
