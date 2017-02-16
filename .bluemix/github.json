@@ -37,6 +37,6 @@
        }
     ],
     "actions": {        
-        "update": ["repo_url", "has_issues"]
+        "update": ["has_issues"]
     }
 }
