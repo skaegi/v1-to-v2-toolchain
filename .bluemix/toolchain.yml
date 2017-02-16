@@ -13,7 +13,7 @@ description: "
   "
 image: data:image/svg+xml;base64,$file(toolchain.svg,base64)
 required: 
- - deploy
+ - github
  - repo
  
 toolchain:
