@@ -29,5 +29,8 @@
       	"key": "repo_url",
       	"readonly": true
        }
-    ]   
+    ],
+    "actions": {        
+        "update":["repo_url"]    
+    }
 }
