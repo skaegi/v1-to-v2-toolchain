@@ -6,13 +6,15 @@
     "type": "object",
     "properties": {
       "repo_url": {
-          "type": "string"
+          "type": "string",
+          "title": "Source repository URL"
       },
       "existing_repo_url": {
           "type": "string"        
       },    
       "type": {
         "type": "string",
+        "title": "Repository type",
         "default": "Existing"
       },
       "has_issues": {
@@ -28,12 +30,11 @@
         "url": "/devops/setup/bm-helper/github_helper.html"
       },  
       {
-        "description": "Repository Type",
         "type": "string",
         "key": "type",
         "readonly": true
        }, {
-      	"description": "Link to the specified source repository URL",
+      	"description": "The repository that your toolchain will link to.",
       	"type": "string",
       	"key": "existing_repo_url",
       	"readonly": true
