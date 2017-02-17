@@ -8,22 +8,38 @@
       "repo_url": {
           "type": "string"
       },
-      "repo_type": {
+      "existing_repo_url": {
+          "type": "string"        
+      },    
+      "type": {
         "type": "string",
         "default": "Existing"
-      }
+      },
+      "has_issues": {
+		"title": "Enable GitHub Issues",
+		"description": "Enable GitHub's Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+	  }
     },
-    "form": [
+    "form": [        
+      {
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
       {
         "description": "Repository Type",
         "type": "string",
-        "key": "repo_type",
-        "readonly": "true"
+        "key": "type",
+        "readonly": true
        }, {
-      "description": "Link to the specified source repository URL",
-      "type": "string",
-      "key": "repo_url",
-      "readonly": "true"
-     }
-    ]
+      	"description": "Link to the specified source repository URL",
+      	"type": "string",
+      	"key": "existing_repo_url",
+      	"readonly": true
+       }
+    ],
+    "actions": {        
+        "update": ["repo_url","has_issues"]
+    }
 }
