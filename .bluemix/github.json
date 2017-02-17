@@ -6,21 +6,22 @@
     "type": "object",
     "properties": {
       "repo_url": {
-          "type": "string"
+          "type": "string",
+          "title": "Source repository URL"
       },
       "repo_type": {
         "type": "string",
+        "title": "Repository type",
         "default": "Existing"
       }
     },
     "form": [
       {
-        "description": "Repository Type",
         "type": "string",
         "key": "repo_type",
         "readonly": "true"
        }, {
-      "description": "Link to the specified source repository URL",
+      "description": "The repository that your toolchain will link to.",
       "type": "string",
       "key": "repo_url",
       "readonly": "true"
