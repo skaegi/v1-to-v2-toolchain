@@ -10,7 +10,8 @@
           "title": "Source repository URL"
       },
       "existing_repo_url": {
-          "type": "string"        
+          "type": "string",        
+          "title": "Source repository URL"
       },    
       "type": {
         "type": "string",
