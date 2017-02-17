@@ -6,24 +6,42 @@
     "type": "object",
     "properties": {
       "repo_url": {
-          "type": "string"
+          "type": "string",        
+          "title": "Source repository URL"
       },
-      "repo_type": {
+      "existing_repo_url": {
+          "type": "string",        
+          "title": "Source repository URL"        
+      },
+      "type": {
         "type": "string",
+	"title": "Repository type",
         "default": "Existing"
-      }
+      },
+      "has_issues": {
+		"title": "Enable GitHub Enterprise Issues",
+		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+	  }
     },
     "form": [
       {
-        "description": "Repository Type",
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
+      {
         "type": "string",
-        "key": "repo_type",
+        "key": "type",
         "readonly": "true"
        }, {
-      "description": "Link to the specified source repository URL",
+      "description": "The repository that your toolchain will link to.",
       "type": "string",
-      "key": "repo_url",
+      "key": "existing_repo_url",
       "readonly": "true"
      }
-    ]
+    ],
+    "actions": {        
+        "update": ["repo_url","has_issues"]
+    }
 }
