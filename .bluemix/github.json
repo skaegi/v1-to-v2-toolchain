@@ -8,12 +8,25 @@
       "repo_url": {
           "type": "string"
       },
+      "existing_repo_url": {
+          "type": "string"        
+      },
       "repo_type": {
         "type": "string",
         "default": "Existing"
-      }
+      },
+      "has_issues": {
+		"title": "Enable GitHub Enterprise Issues",
+		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+	  }
     },
     "form": [
+      {
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
       {
         "description": "Repository Type",
         "type": "string",
@@ -22,8 +35,11 @@
        }, {
       "description": "Link to the specified source repository URL",
       "type": "string",
-      "key": "repo_url",
+      "key": "existing_repo_url",
       "readonly": "true"
      }
-    ]
+    ],
+    "actions": {        
+        "update": ["repo_url","has_issues"]
+    }
 }
