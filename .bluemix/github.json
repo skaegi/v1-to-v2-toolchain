@@ -12,6 +12,9 @@
           "title": "Existing Git Repository",
           "type": "string"
       },
+      "repo-url": {
+          "type": "string"
+      },	    
       "repo_type": {
         "type": "string",
         "default": "New"
