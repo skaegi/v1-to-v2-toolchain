@@ -47,6 +47,6 @@
      }
     ],
     "actions": {        
-        "create": ["repo_name", "repo_url", "type", "has_issues"],
+        "create": ["repo_name", "repo_url", "type", "has_issues"]
     }
 }
