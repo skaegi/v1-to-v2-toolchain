@@ -6,13 +6,14 @@
     "type": "object",
     "properties": {
       "repo_name": {
-          "type": "string"
+          "type": "string",
+	  "default" : ""
       },  
       "repo-url": {
           "title": "Existing Git Repository",
           "type": "string"
       },
-      "repo_type": {
+      "type": {
         "type": "string",
         "default": "New"
       },
@@ -31,7 +32,7 @@
       {
         "description": "Repository Type",
         "type": "string",
-        "key": "repo_type",
+        "key": "type",
         "readonly": true
        },
       {
@@ -47,6 +48,6 @@
      }
     ],
     "actions": {
-      "create": ["repo_name", "type", "has_issues"]
+      "create": ["repo_name", "repo_name", "type", "has_issues"]
     }	
 }
