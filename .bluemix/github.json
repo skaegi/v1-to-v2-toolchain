@@ -5,14 +5,14 @@
     "longDescription": "Store your source code in an existing repository on GitHub Enterprise and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
-      "repo-name": {
+      "repo_name": {
           "type": "string"
       },  
-      "repo_url": {
+      "repo-url": {
           "title": "Existing Git Repository",
           "type": "string"
       },
-      "repo-url": {
+      "repo_url": {
           "type": "string"
       },	    
       "repo_type": {
@@ -45,11 +45,11 @@
        {
       "description": "This is the repository from where the source code will be imported.",
       "type": "string",
-      "key": "repo_url",
+      "key": "repo-url",
       "readonly": true
      }
     ],
     "actions": {        
-        "create": ["repo_name", "repo-url", "type", "has_issues"]
+        "create": ["repo_name", "repo_url", "type", "has_issues"]
     }
 }
