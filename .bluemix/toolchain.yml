@@ -65,3 +65,4 @@ github:
   parameters:
     repo_url: "{{projectRepoUrl}}"
     repo_name: "{{repoName}}"
+    repo-url: "{{repo.parameters.repo_url}}"
