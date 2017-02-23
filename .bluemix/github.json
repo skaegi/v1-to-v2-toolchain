@@ -50,6 +50,6 @@
      }
     ],
     "actions": {        
-        "create": ["repo_name", "repo_url", "type", "has_issues"]
+        "update": ["repo_url", "has_issues"]
     }
 }
