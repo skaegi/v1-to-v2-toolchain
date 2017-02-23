@@ -5,25 +5,48 @@
     "longDescription": "Store your source code in an existing repository on GitHub Enterprise and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
+      "repo-name": {
+          "type": "string"
+      },  
       "repo_url": {
+          "title": "Existing Git Repository"
           "type": "string"
       },
       "repo_type": {
         "type": "string",
-        "default": "Existing"
-      }
+        "default": "New"
+      },
+      "has_issues": {
+		"title": "Enable GitHub Enterprise Issues",
+		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+	  } 
     },
     "form": [
+      {
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
       {
         "description": "Repository Type",
         "type": "string",
         "key": "repo_type",
-        "readonly": "true"
-       }, {
-      "description": "Link to the specified source repository URL",
+        "readonly": true
+       },
+      {
+        "description": "New Repository Name",
+        "type": "string",
+        "key": "repo_name" 
+       },  
+       {
+      "description": "This is the repository from where the source code will be imported.",
       "type": "string",
-      "key": "repo_url",
-      "readonly": "true"
+      "key": "repo-url",
+      "readonly": true
      }
-    ]
+    ],
+    "actions": {        
+        "create": ["repo_name", "", "type", "has_issues"],
+    }
 }
