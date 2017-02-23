@@ -27,9 +27,9 @@ toolchain:
 repo:
   service_id: github_integrated
   parameters:
-    repo_name: "{{projectName}}"
-    repo_url: "{{projectRepoUrl}}"
-    type: link
+    repo_name: "{{github.parameters.repo-name}}"
+    repo_url: ""
+    type: new
     has_issues: true
   hidden: [form, description]       
 
@@ -64,3 +64,4 @@ github:
   service-category: github_integrated
   parameters:
     repo_url: "{{projectRepoUrl}}"
+    repo_name: "{{repoName}}"
