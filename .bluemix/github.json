@@ -42,11 +42,11 @@
        {
       "description": "This is the repository from where the source code will be imported.",
       "type": "string",
-      "key": "repo-url",
+      "key": "repo_url",
       "readonly": true
      }
     ],
     "actions": {        
-        "create": ["repo_name", "", "type", "has_issues"],
+        "create": ["repo_name", "repo_url", "type", "has_issues"],
     }
 }
