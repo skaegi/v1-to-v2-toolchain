@@ -12,9 +12,6 @@
           "title": "Existing Git Repository",
           "type": "string"
       },
-      "repo_url": {
-          "type": "string"
-      },	    
       "repo_type": {
         "type": "string",
         "default": "New"
@@ -48,8 +45,5 @@
       "key": "repo-url",
       "readonly": true
      }
-    ],
-    "actions": {        
-        "update": ["repo_url", "has_issues"]
-    }
+    ]
 }
