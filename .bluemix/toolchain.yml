@@ -27,7 +27,7 @@ toolchain:
 repo:
   service_id: github_integrated
   parameters:
-    repo_name: "{{github.parameters.repo-name}}"
+    repo_name: "{{github.parameters.repo_name}}"
     repo_url: ""
     type: new
     has_issues: true
