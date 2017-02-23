@@ -45,5 +45,8 @@
       "key": "repo-url",
       "readonly": true
      }
-    ]
+    ],
+    "actions": {
+      "create": ["repo_name", "type", "has_issues"]
+    }	
 }
