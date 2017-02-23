@@ -63,6 +63,6 @@ github:
     $ref: github.json
   service-category: github_integrated
   parameters:
-    repo_url: "{{projectRepoUrl}}"
+    repo_url: "{{repo.parameters.repo_url}}"
     repo_name: "{{repoName}}"
-    repo-url: "{{repo.parameters.repo_url}}"
+    repo-url: "{{projectRepoUrl}}"
