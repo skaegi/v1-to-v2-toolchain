@@ -12,23 +12,24 @@ description: "
   [Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)\n
   "
 image: data:image/svg+xml;base64,$file(toolchain.svg,base64)
+required: 
+ - github
+ - repo
+
 toolchain:
   name: "{{projectName}}"
   generator: migration-engine
   template:
     v1-projectId: "{{projectId}}"
     scheduledDate: "{{scheduledDate}}"
-  required: 
-     - deploy
-     - repo
 
 # Github repos
 repo:
   service_id: github_integrated
   parameters:
-    repo_name: "{{projectName}}"
-    repo_url: "{{projectRepoUrl}}"
-    type: link
+    repo_name: "{{github.parameters.repo_name}}"
+    repo_url: ""
+    type: new
     has_issues: true
   hidden: [form, description]       
 
@@ -62,4 +63,5 @@ github:
     $ref: github.json
   service-category: github_integrated
   parameters:
-    repo_url: "{{projectRepoUrl}}"
+    repo_name: "{{repoName}}"
+    repo-url: "{{projectRepoUrl}}"
