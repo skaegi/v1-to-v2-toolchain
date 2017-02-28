@@ -8,14 +8,8 @@
       "repo_name": {
           "title":"New repository name",	      
           "type": "string"
-      },
-      "repo_url": {
-          "title":"Source repository URL",
-          "description":"Type the URL of the repository that you are forking, cloning, or linking to.",
-          "type":"string",
-          "default":"https://github.com/open-toolchain/node-hello-world"
       },	    
-      "repo-url": {
+      "existing_repo_url": {
           "title": "Existing Git Repository",
           "type": "string"
       },
@@ -50,11 +44,11 @@
        {
       "description": "This is the repository from where the source code will be imported.",
       "type": "string",
-      "key": "repo-url",
+      "key": "existing_repo_url",
       "readonly": true
      }
     ],
     "actions": {
-      "create": ["repo_name", "repo_url", "type", "has_issues"]
+      "create": ["has_issues","repo_name","type"]
     }	
 }
