@@ -6,9 +6,14 @@
     "type": "object",
     "properties": {
       "repo_name": {
-          "type": "string",
-	  "default" : ""
-      },  
+          "title":"New repository name",	      
+          "type": "string"
+      },
+      "repo_url": {
+          "title":"Source repository URL",
+          "description":"Type the URL of the repository that you are forking, cloning, or linking to.",
+          "type":"string"
+      },	    
       "repo-url": {
           "title": "Existing Git Repository",
           "type": "string"
@@ -24,6 +29,7 @@
 		"default": true
 	  } 
     },
+    "required": ["repo_name"],	
     "form": [
       {
         "type": "validator",
@@ -48,6 +54,6 @@
      }
     ],
     "actions": {
-      "create": ["repo_name", "repo_name", "type", "has_issues"]
+      "create": ["repo_name", "repo_url", "type", "has_issues"]
     }	
 }
