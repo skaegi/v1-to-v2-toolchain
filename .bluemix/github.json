@@ -24,7 +24,7 @@
 		"default": true
 	  } 
     },
-    "required": ["repo_name"],	
+    "required": ["repo_name","type"],	
     "form": [
       {
         "type": "validator",
