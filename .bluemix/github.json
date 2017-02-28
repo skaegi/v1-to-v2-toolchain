@@ -12,7 +12,8 @@
       "repo_url": {
           "title":"Source repository URL",
           "description":"Type the URL of the repository that you are forking, cloning, or linking to.",
-          "type":"string"
+          "type":"string",
+          "default":"https://github.com/open-toolchain/node-hello-world"
       },	    
       "repo-url": {
           "title": "Existing Git Repository",
