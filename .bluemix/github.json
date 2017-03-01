@@ -6,16 +6,21 @@
     "type": "object",
     "properties": {
       "repo_name": {
-          "title":"New repository name",	      
+          "title":"New repository name",
+	  "description": "New repository name",
           "type": "string"
       },	    
       "existing_repo_url": {
           "title": "Existing Git Repository",
-          "type": "string"
+	  "description": "This is the repository from where the source code will be imported.",
+          "type": "string",
+	  "readonly": true    
       },
       "type": {
         "type": "string",
-        "default": "new"
+	"description": "Repository Type",      
+	"enum": ["new"],
+	"readonly": true      
       },
       "has_issues": {
 		"title": "Enable GitHub Enterprise Issues",
@@ -29,27 +34,19 @@
       {
         "type": "validator",
         "url": "/devops/setup/bm-helper/github_helper.html"
-      },  
+      }, 
       {
-        "description": "Repository Type",
-        "type": "string",
-        "titleMap": {
-		"new": "New"
-	}, 	      
-        "key": "type",
-        "readonly": true
-       },
-      {
-        "description": "New Repository Name",
-        "type": "string",
-        "key": "repo_name" 
-       },  
-       {
-      "description": "This is the repository from where the source code will be imported.",
-      "type": "string",
-      "key": "existing_repo_url",
-      "readonly": true
-     }
+	 "type": "selectfieldset",
+	 "key": "type",
+	 "titleMap": {
+		"new": "New",
+	 },
+	 "items": [{
+		"type": "section",
+		"description": "Create a new repository and copy the code from existing repository.",
+		"items": ["repo_name", "existing_repo_url"]
+	 }]     
+      }
     ],
     "actions": {
       "create": ["has_issues","repo_name","type"]
