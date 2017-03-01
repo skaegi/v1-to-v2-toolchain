@@ -33,6 +33,9 @@
       {
         "description": "Repository Type",
         "type": "string",
+        "titleMap": {
+		"new": "New"
+	}, 	      
         "key": "type",
         "readonly": true
        },
