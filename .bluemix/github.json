@@ -2,38 +2,52 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "New Git repository",
     "description": "Git repository schema",
-    "longDescription": "Store your source code in a new git repository and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Source code from your existing repository will be migrated to a new repository in IBM Hosted Git. You can engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
-      "repo-type": {
+      "type": {
         "type": "string",
-        "default": "New"
+	    "description": "Repository Type",      
+	    "enum": ["new"],
+	    "readonly": true      
       },   
-      "repo-name": {
+      "repo_name": {
+          "title":"New repository name",
+	      "description": "New repository name",
           "type": "string"
       },       
-      "repo-url": {
-          "type": "string"
-      }
+      "existing_repo_url": {          
+          "title": "Existing Git Repository",
+	      "description": "This is the repository from where the source code will be imported.",
+          "type": "string",
+          "readonly" : true
+      },
+      "has_issues": {
+		"title": "Enable GitHub Enterprise Issues",
+		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+	  }
     },
-    "required": ["repo-name"],
+    "required": ["repo_name"],
     "form": [
       {
-        "description": "Repository Type",
-        "type": "string",
-        "key": "repo-type",
-        "readonly": true
-       },
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
       {
-        "description": "New Repository Name",
-        "type": "string",
-        "key": "repo-name" 
-       },  
-       {
-      "description": "Source code import repository URL",
-      "type": "string",
-      "key": "repo-url",
-      "readonly": true
-     }
-    ]
+	    "type": "selectfieldset",
+	    "key": "type",
+	    "titleMap": {
+		    "new": "New",
+	    },
+	    "items": [{
+		    "type": "section",
+		    "items": ["repo_name", "existing_repo_url"]
+	    }]     
+      }
+    ],
+    "actions": {
+      "create": ["has_issues","repo_name","type"]
+    }
 }
