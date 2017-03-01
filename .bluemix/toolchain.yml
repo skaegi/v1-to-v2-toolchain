@@ -27,7 +27,7 @@ toolchain:
 repo:
   service_id: hostedgit
   parameters:
-    repo_name: "{{github.parameters.repo-name}}"
+    repo_name: "{{github.parameters.repo_name}}"
     repo_url: ""
     type: new
     has_issues: true
@@ -63,5 +63,5 @@ github:
     $ref: github.json
   service-category: hostedgit
   parameters:
-    repo-url: "{{projectRepoUrl}}"
-    repo-name: "{{repoName}}"
+    existing_repo_url: "{{projectRepoUrl}}"
+    repo_name: "{{repoName}}"
