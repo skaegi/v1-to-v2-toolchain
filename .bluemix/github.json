@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Github Enterprise link",
     "description": "Github Enterprise link schema",
-    "longDescription": "Store your source code in an existing repository on GitHub Enterprise and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Source code from your existing repository will be migrated to a new repository on GitHub Enterprise.",
     "type": "object",
     "properties": {
       "repo_name": {
@@ -43,7 +43,6 @@
 	 },
 	 "items": [{
 		"type": "section",
-		"description": "Create a new repository and copy the code from existing repository.",
 		"items": ["repo_name", "existing_repo_url"]
 	 }]     
       }
