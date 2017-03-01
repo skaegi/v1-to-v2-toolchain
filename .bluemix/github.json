@@ -2,20 +2,25 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Github Enterprise link",
     "description": "Github Enterprise link schema",
-    "longDescription": "Store your source code in an existing repository on GitHub Enterprise and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Source code from your existing repository will be migrated to a new repository in GitHub Enterprise. You can engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
       "repo_name": {
-          "type": "string",
-	  "default" : ""
-      },  
-      "repo-url": {
-          "title": "Existing Git Repository",
+          "title":"New repository name",
+	  "description": "New repository name",
           "type": "string"
+      },	    
+      "existing_repo_url": {
+          "title": "Existing Git Repository",
+	  "description": "This is the repository from where the source code will be imported.",
+          "type": "string",
+	  "readonly": true    
       },
       "type": {
         "type": "string",
-        "default": "New"
+	"description": "Repository Type",      
+	"enum": ["new"],
+	"readonly": true      
       },
       "has_issues": {
 		"title": "Enable GitHub Enterprise Issues",
@@ -24,30 +29,25 @@
 		"default": true
 	  } 
     },
+    "required": ["repo_name","type"],	
     "form": [
       {
         "type": "validator",
         "url": "/devops/setup/bm-helper/github_helper.html"
-      },  
+      }, 
       {
-        "description": "Repository Type",
-        "type": "string",
-        "key": "type",
-        "readonly": true
-       },
-      {
-        "description": "New Repository Name",
-        "type": "string",
-        "key": "repo_name" 
-       },  
-       {
-      "description": "This is the repository from where the source code will be imported.",
-      "type": "string",
-      "key": "repo-url",
-      "readonly": true
-     }
+	 "type": "selectfieldset",
+	 "key": "type",
+	 "titleMap": {
+		"new": "New",
+	 },
+	 "items": [{
+		"type": "section",
+		"items": ["repo_name", "existing_repo_url"]
+	 }]     
+      }
     ],
     "actions": {
-      "create": ["repo_name", "repo_name", "type", "has_issues"]
+      "create": ["has_issues","repo_name","type"]
     }	
 }

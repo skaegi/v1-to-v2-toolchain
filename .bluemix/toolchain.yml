@@ -64,4 +64,4 @@ github:
   service-category: github_integrated
   parameters:
     repo_name: "{{repoName}}"
-    repo-url: "{{projectRepoUrl}}"
+    existing_repo_url: "{{projectRepoUrl}}"
