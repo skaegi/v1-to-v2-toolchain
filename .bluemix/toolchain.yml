@@ -1,67 +1,62 @@
----
-name: Upgrade to Toolchain
-description: "
-  A toolchain is an open, extensible system of tools that supports the development, deployment, and operations of an application.\n\n
-  
-  #### About the Upgrade Process\n
-  When you create this toolchain, it is preconfigured with GitHub for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.\n\n
-  
-  #### More Info\n
-  [Tutorial on upgrading Project to Toolchain](http://ibm.biz/DevOpsProjectUpgradeTutorial)\n\n
-  [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)\n\n
-  [Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)\n
-  "
-image: data:image/svg+xml;base64,$file(toolchain.svg,base64)
-required: 
- - github
- - repo
- 
+version: '2'
+template:
+  name: Upgrade to Toolchain
+  description: |2-
+     A toolchain is an open, extensible system of tools that supports the development, deployment, and operations of an application.
+
+
+    #### About the Upgrade Process
+     When you create this toolchain, it is preconfigured with GitHub for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.
+
+
+    #### More Info
+     [Tutorial on upgrading Project to Toolchain](http://ibm.biz/DevOpsProjectUpgradeTutorial)
+
+     [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)
+
+     [Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
+     
+  header: '![](toolchain.svg "header image")'
+  required:
+    - repo
 toolchain:
-  name: "{{projectName}}"
-  generator: migration-engine
   template:
-    v1-projectId: "{{projectId}}"
-    scheduledDate: "{{scheduledDate}}"
-
-# Github repos
-repo:
-  service_id: hostedgit
-  parameters:
-    repo_name: "{{github.parameters.repo_name}}"
-    repo_url: ""
-    type: new
-    has_issues: true
-  hidden: [form, description]       
-
-# Pipelines
-build:
-  service_id: pipeline
-  parameters:
-    name: "{{projectName}}"
-    v1-projectId: "{{projectId}}"
-    services: ["repo"]
-    configuration: 
-     content: "{{pipelineContent}}"
-     execute: false
-     env:
-      REPO: "repo"
-     source:
-       environment: "{{pipelineEnv}}"
-       version: v1
-       pipelineUrl: "{{pipelineUrl}}"
-       projectUrl: "{{projectUrl}}"
-       showLink: true 
-  hidden: [form, description]    
-       
-#Web IDE
-webide:
-  service_id: orion
-
-#Github
-github:
-  schema:
-    $ref: github.json
-  service-category: hostedgit
-  parameters:
-    existing_repo_url: "{{projectRepoUrl}}"
-    repo_name: "{{repoName}}"
+    v1-projectId: '{{projectId}}'
+    scheduledDate: '{{scheduledDate}}'
+  name: '{{projectName}}'
+  generator: migration-engine
+services:
+  repo:
+    service_id: hostedgit
+    parameters:
+      repo_name: '{{form.hostedgit.parameters.repo_name}}'
+      repo_url: ''
+      type: new
+      has_issues: true
+  build:
+    service_id: pipeline
+    parameters:
+      services:
+        - repo
+      name: '{{projectName}}'
+      v1-projectId: '{{projectId}}'
+      configuration:
+        content: '{{pipelineContent}}'
+        execute: false
+        env:
+          REPO: repo
+        source:
+          version: v1
+          environment: '{{pipelineEnv}}'
+          pipelineUrl: '{{pipelineUrl}}'
+          projectUrl: '{{projectUrl}}'
+          showLink: true
+  webide:
+    service_id: orion
+form:
+  hostedgit:
+    parameters:
+      existing_repo_url: '{{projectRepoUrl}}'
+      repo_name: '{{repoName}}'
+    schema:
+      $ref: github.json
