@@ -18,10 +18,16 @@
       },       
       "existing_repo_url": {          
           "title": "Existing Git Repository",
-	      "description": "This is the repository from where the source code will be imported.",
+	  "description": "This is the repository from where the source code will be imported.",
           "type": "string",
           "readonly" : true
       },
+      "private_repo": {
+         "title": "Private Repository",
+         "description": "Select this check box to create a private repository.",
+         "type": "boolean",
+         "default": true
+      },	    
       "has_issues": {
 		"title": "Enable GitHub Enterprise Issues",
 		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
