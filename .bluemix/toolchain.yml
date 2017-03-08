@@ -59,6 +59,6 @@ form:
     parameters:
       existing_repo_url: '{{projectRepoUrl}}'
       repo_name: '{{repoName}}'
-      private_repo: '{{privateProject}}'
+      private_repo: {{privateProject}}
     schema:
       $ref: github.json
