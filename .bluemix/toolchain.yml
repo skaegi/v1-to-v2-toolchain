@@ -16,7 +16,7 @@ template:
 
      [Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
      
-  header: '![](toolchain.svg "header image")'
+  header: '![](toolchain.svg)'
   required:
     - repo
 toolchain:
