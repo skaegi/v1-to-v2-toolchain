@@ -33,6 +33,7 @@ services:
       repo_url: ''
       type: new
       has_issues: true
+      private_repo: '{{form.hostedgit.parameters.private_repo}}'
   build:
     service_id: pipeline
     parameters:
@@ -58,5 +59,6 @@ form:
     parameters:
       repo_name: '{{repoName}}'
       existing_repo_url: '{{projectRepoUrl}}'
+      private_repo: '{{privateRepo}}'
     schema:
       $ref: github.json
