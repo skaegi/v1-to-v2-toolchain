@@ -22,6 +22,12 @@
 	"enum": ["new"],
 	"readonly": true      
       },
+      "private_repo": {
+         "title": "Private Repository",
+         "description": "Select this check box to create a private repository.",
+         "type": "boolean",
+         "default": false
+      },		    
       "has_issues": {
 		"title": "Enable GitHub Enterprise Issues",
 		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
