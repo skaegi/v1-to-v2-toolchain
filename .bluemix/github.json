@@ -47,7 +47,7 @@
        }, {
 	"description": "Select this check box to track the deployment of code changes by creating tags, labels and comments on commits, pull requests and referenced issues.",
 	"type": "boolean",       
-	"key": "enable_ttracebility"       
+	"key": "enable_tracebility"       
        } 
     ],
     "actions": {        
