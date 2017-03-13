@@ -23,7 +23,12 @@
 		"description": "Enable GitHub's Issues page for lightweight issue tracking.",
 		"type": "boolean",
 		"default": true
-	  }
+      },
+      "enable_tracebility": {
+	      "title": "Track deployment of code changes",
+	      "type": "boolean",
+	      "default": false
+      }
     },
     "form": [        
       {
@@ -39,7 +44,11 @@
       	"type": "string",
       	"key": "existing_repo_url",
       	"readonly": true
-       }
+       }, {
+	"description": "Select this check box to track the deployment of code changes by creating tags, labels and comments on commits, pull requests and referenced issues.",
+	"type": "boolean",       
+	"key": "enable_ttracebility"       
+       } 
     ],
     "actions": {        
         "update": ["repo_url","has_issues"]
