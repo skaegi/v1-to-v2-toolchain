@@ -41,7 +41,7 @@ services:
       type: new
       has_issues: true
       private_repo: '{{form.hostedgit.parameters.private_repo}}'
-      enable_traceability: {{form.hostedgit.parameters.enable_traceability}}
+      enable_traceability: '{{form.hostedgit.parameters.enable_traceability}}'
   build:
     service_id: pipeline
     parameters:
