@@ -66,6 +66,6 @@ form:
     parameters:
       repo_url: '{{projectRepoUrl}}'
       existing_repo_url: '{{projectRepoUrl}}'
-      enable_traceability: '{{enableTraceAbility}}'
+      enable_traceability: false
     schema:
       $ref: github.json
