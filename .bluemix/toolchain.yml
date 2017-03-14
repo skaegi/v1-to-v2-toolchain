@@ -6,15 +6,15 @@ template:
 
 
     #### About the Upgrade Process
-     When you create this toolchain, it is preconfigured with GitHub for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.
+     When you create this toolchain, it is preconfigured with IBM hosted Git for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.
 
 
     #### More Info
-     [Tutorial on upgrading Project to Toolchain](http://ibm.biz/DevOpsProjectUpgradeTutorial)
+     [Tutorial: Upgrade your project to a toolchain](https://ibm.biz/ids-upgrade-blogpost)
 
-     [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)
+     [Docs: Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)
 
-     [Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
+     [Blog: Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
      
   header: '![](toolchain.svg)'
   required:
@@ -23,6 +23,13 @@ toolchain:
   template:
     v1-projectId: '{{projectId}}'
     scheduledDate: '{{scheduledDate}}'
+    getting_started: >-
+      This toolchain was created from your [DevOps Services
+      project]({{projectUrl}}). Before you start to use the toolchain, complete
+      a few [next
+      steps](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html#upgrade_next_steps).
+      To learn more about toolchains, see [Getting started with Continuous
+      Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html?pos=2).
   name: '{{projectName}}'
   generator: migration-engine
 services:
@@ -34,6 +41,7 @@ services:
       type: new
       has_issues: true
       private_repo: '{{form.hostedgit.parameters.private_repo}}'
+      enable_traceability: '{{form.githubpublic.parameters.enable_traceability}}'
   build:
     service_id: pipeline
     parameters:
@@ -60,5 +68,6 @@ form:
       existing_repo_url: '{{projectRepoUrl}}'
       repo_name: '{{repoName}}'
       private_repo: '{{privateRepo}}'
+      enable_traceability: '{{enableTraceAbility}}'
     schema:
       $ref: github.json
