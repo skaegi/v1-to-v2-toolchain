@@ -24,7 +24,7 @@
 		"type": "boolean",
 		"default": true
       },
-      "enable_tracebility": {
+      "enable_traceability": {
 	      "type": "boolean",
 	      "title": "Track deployment of code changes",
 	      "description": "Select this check box to track the deployment of code changes by creating tags, labels and comments on commits, pull requests and referenced issues.",
@@ -47,7 +47,7 @@
       	"readonly": true
        }, {
 	"type": "boolean",       
-	"key": "enable_tracebility"       
+	"key": "enable_traceability"       
        } 
     ],
     "actions": {        
