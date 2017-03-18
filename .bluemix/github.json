@@ -33,7 +33,13 @@
 		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
 		"type": "boolean",
 		"default": true
-	  }
+      },
+      "enable_traceability": {
+	      "type": "boolean",
+	      "title": "Track deployment of code changes",
+	      "description": "Select this check box to track the deployment of code changes by creating tags, labels and comments on commits, pull requests and referenced issues.",
+	      "default": true
+      }
     },
     "required": ["repo_name"],
     "form": [
@@ -51,6 +57,9 @@
 		    "type": "section",
 		    "items": ["repo_name", "existing_repo_url"]
 	    }]     
+      }, {
+	"type": "boolean",       
+	"key": "enable_traceability"       
       }
     ],
     "actions": {
