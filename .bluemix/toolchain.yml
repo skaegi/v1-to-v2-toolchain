@@ -62,6 +62,6 @@ form:
       existing_repo_url: '{{projectRepoUrl}}'
       repo_name: '{{repoName}}'
       private_repo: '{{privateRepo}}'
-      enable_traceability: true
+      enable_traceability: false
     schema:
       $ref: github.json
