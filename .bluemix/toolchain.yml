@@ -41,6 +41,7 @@ services:
       type: new
       has_issues: true
       private_repo: '{{form.github_integrated.parameters.private_repo}}'
+      enable_traceability: '{{form.github_integrated.parameters.enable_traceability}}'
   build:
     service_id: pipeline
     parameters:
@@ -67,5 +68,6 @@ form:
       repo_name: '{{repoName}}'
       existing_repo_url: '{{projectRepoUrl}}'
       private_repo: '{{privateRepo}}'
+      enable_traceability: false
     schema:
       $ref: github.json
