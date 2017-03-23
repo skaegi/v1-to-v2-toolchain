@@ -23,7 +23,6 @@ toolchain:
   template:
     v1-projectId: '{{projectId}}'
     scheduledDate: '{{scheduledDate}}'
-    v1-pipelineStages: '{{v1PipelineStages}}'
     getting_started: >-
       This toolchain was created from your [DevOps Services
       project]({{projectUrl}}). Before you start to use the toolchain, complete
