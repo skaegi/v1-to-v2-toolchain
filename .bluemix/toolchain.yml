@@ -40,7 +40,7 @@ services:
       repo_url: '{{projectRepoUrl}}'
       type: link
       has_issues: true
-      enable_traceability: '{{form.githubpublic.parameters.enable_traceability}}'
+      enable_traceability: false
   build:
     service_id: pipeline
     parameters:
