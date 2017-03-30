@@ -64,7 +64,15 @@
       	"readonly": true
       },{
       	"type": "section",
-	"title": "Track and Plan Migration"
+	"title": "Track and Plan Migration",
+	"description": "Details for setting up the migration of your Track and Plan work items",
+	"items" : [
+		{
+		  "type": "string",
+		  "title": "OTC v2 uses Git issues for issue tracking."	
+		}
+	
+	]
       }, {
         "type": "selectfieldset",
         "key": "migrateTAndP",
