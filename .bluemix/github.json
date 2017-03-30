@@ -25,7 +25,7 @@
 		"default": true
       },
       "migrateTAndP": {
-      		"title": "Migrate Track & Plan work-items to Github Issues",
+      		"title": "Do you wish to migrate Track & Plan work-items to Github Issues",
 		"description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
 		"type": "boolean",
 		"default": true
@@ -63,9 +63,21 @@
       	"key": "existing_repo_url",
       	"readonly": true
       }, {
-	"type": "string",
+	"type": "selectfieldset",
 	"key": "migrateTAndP",
-	"readonly": ["query","labels"]
+	"readonly": false,
+	"title-map": {
+	  "yes" : "Yes",
+	  "no" : "No"
+	},
+	"items": [{
+	    "type" : "section",
+	    "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out."
+	    "items" : ["query", "labels"]
+	}, {
+	    "type" : "section"
+	    "description" : "You opted not to migrate RTC Work-items to Github issues."
+	}]
       },
       "query",
       "labels"
