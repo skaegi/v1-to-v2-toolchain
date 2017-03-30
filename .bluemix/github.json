@@ -25,15 +25,15 @@
 		"default": true
       },
       "migrateTAndP": {
-      		"title": "Do you wish to migrate Track & Plan work-items to Github Issues",
-		"description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
-		"type": "boolean",
-		"default": true
+      	            "title": "Do you wish to migrate Track & Plan work-items to Github Issues",
+	            "description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
+	            "type": "boolean",
+	            "default": true
       },
       "query": {
-        "type": "string",
-        "title": "RTC Query",
-	"description": "Work-items will be selected based on this query."
+             "type": "string",
+             "title": "RTC Query",
+	     "description": "Work-items will be selected based on this query."
       },
       "labels": {
         "type": "object",
@@ -62,21 +62,21 @@
       	"key": "existing_repo_url",
       	"readonly": true
       }, {
-	"type": "selectfieldset",
-	"key": "migrateTAndP",
-	"readonly": false,
-	"title-map": {
-	         "yes" : "Yes",
-	         "no" : "No"
-	},
-	"items": [{
-	       "type" : "section",
-	       "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
-	       "items" : ["query", "labels"]
-	}, {
-	       "type" : "section",
-	       "description" : "You opted not to migrate RTC Work-items to Github issues."
-	}]
+        "type": "selectfieldset",
+        "key": "migrateTAndP",
+        "readonly": false,
+        "title-map": {
+                 "yes" : "Yes",
+                 "no" : "No"
+      },
+        "items": [{
+               "type" : "section",
+               "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
+               "items" : ["query", "labels"]
+      }, {
+               "type" : "section",
+               "description" : "You opted not to migrate RTC Work-items to Github issues."
+         }]
       },
       "query",
       "labels"
