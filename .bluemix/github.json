@@ -37,6 +37,7 @@
       },
       "labelz": {
         "type": "object",
+	"title": "boog",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -88,7 +89,7 @@
 			"items": [{
 			       "type" : "section",
 			       "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
-			       "items" : ["query", "labels"]
+			       "items" : ["query", "labelz"]
 			       }, {
 			       "type" : "label",
 			       "description" : "Track and Plan data will be lost."
