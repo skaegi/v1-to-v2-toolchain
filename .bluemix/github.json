@@ -37,7 +37,7 @@
       },
       "labelz": {
         "type": "object",
-	"title": "boog",
+	"title": "Git issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new Git issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -65,8 +65,8 @@
       	"readonly": true
       },{
       	"type": "section",
-	"title": "Track and Plan Migration",
-	"description": "Details for setting up the migration of your Track and Plan work items",
+	"title": "Track & Plan Migration",
+	"description": "Details for setting up the migration of your Track & Plan work items",
 	"items" : [
 		{
 		  "type": "label",
@@ -76,7 +76,7 @@
 		{
 		  "type": "label",
 	          "key": "lab2",
-		  "title": "To keep your existing Track and Plan data it must be transferred to Git issues now."	
+		  "title": "To keep your existing Track & Plan data it must be transferred to Git issues now."	
 		},
 		 {
 			"type": "selectfieldset",
@@ -92,7 +92,7 @@
 			       "items" : ["query", "labelz"]
 			       }, {
 			       "type" : "label",
-			       "description" : "Track and Plan data will be lost."
+			       "description" : "Track & Plan data will be lost."
 			       }]
 	      }
 	
