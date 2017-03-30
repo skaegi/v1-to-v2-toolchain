@@ -32,7 +32,7 @@
       },
       "query": {
         "type": "string",
-        "title": "RTC Query"
+        "title": "RTC Query",
 	"description": "Work-items will be selected based on this query"
       },
       "labels": {
