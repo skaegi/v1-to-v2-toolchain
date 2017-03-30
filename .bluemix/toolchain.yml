@@ -44,6 +44,7 @@ services:
       track_and_plan:
         query: '{{form.githubpublic.parameters.query}}'
         labels: '{{form.githubpublic.parameters.labels}}'
+        migrateTAndP: '{{form.githubpublic.parameters.migrateTAndP}}'
   build:
     service_id: pipeline
     parameters:
@@ -70,6 +71,7 @@ form:
       repo_url: '{{projectRepoUrl}}'
       existing_repo_url: '{{projectRepoUrl}}'
       enable_traceability: false
+      migrateTAndP: '{{migrateTAndP}}'
       query: ""
       labels:
         type: true
