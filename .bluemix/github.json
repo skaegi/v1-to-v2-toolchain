@@ -65,7 +65,7 @@
       }, {
         "type": "selectfieldset",
         "key": "migrateTAndP",
-        "readonly": false,
+        "readonly": true,
         "title-map": {
                  "yes" : "Yes",
                  "no" : "No"
