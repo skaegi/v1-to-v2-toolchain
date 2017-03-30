@@ -23,6 +23,21 @@
 		"description": "Enable GitHub's Issues page for lightweight issue tracking.",
 		"type": "boolean",
 		"default": true
+      },
+      "query": {
+        "type": "string",
+        "title": "RTC Query"
+      },
+      "labels": {
+        "type": "object",
+        "properties": {
+          "type": {"title": "type", "type": "boolean"},
+          "severity": {"title": "severity", "type": "boolean"},
+          "state": {"title": "state", "type": "boolean"},
+          "priority": {"title": "priority", "type": "boolean"},
+          "resolution": {"title": "resolution", "type": "boolean"},
+          "filedAgainst": {"title": "filedAgainst", "type": "boolean"},
+          "tags": {"title": "tags", "type": "boolean"}
       }
     },
     "form": [        
@@ -39,7 +54,9 @@
       	"type": "string",
       	"key": "existing_repo_url",
       	"readonly": true
-       }
+       },
+      "query",
+      "labels"
     ],
     "actions": {        
         "update": ["repo_url","has_issues"]
