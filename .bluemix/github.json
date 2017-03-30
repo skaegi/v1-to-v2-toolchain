@@ -77,7 +77,7 @@
                "type" : "section",
                "description" : "You opted not to migrate RTC Work-items to Github issues."
          }]
-      },
+      }
     ],
     "actions": {        
         "update": ["repo_url","has_issues"]
