@@ -45,6 +45,7 @@
           "resolution": {"title": "resolution", "type": "boolean"},
           "filedAgainst": {"title": "filedAgainst", "type": "boolean"},
           "tags": {"title": "tags", "type": "boolean"}
+        }
       }
     },
     "form": [        
@@ -68,15 +69,15 @@
         "title-map": {
                  "yes" : "Yes",
                  "no" : "No"
-      },
+        },
         "items": [{
                "type" : "section",
                "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
                "items" : ["query", "labels"]
-      }, {
+               }, {
                "type" : "section",
                "description" : "You opted not to migrate RTC Work-items to Github issues."
-         }]
+               }]
       }
     ],
     "actions": {        
