@@ -64,7 +64,7 @@
        }, {
 	"type": "string",
 	"key": "migrateTAndP",
-	"readonly": ["query","labels"],
+	"readonly": ["query","labels"]
        },
       "query",
       "labels"
