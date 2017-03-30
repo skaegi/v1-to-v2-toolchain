@@ -67,28 +67,25 @@
 	"title": "Track and Plan Migration",
 	"description": "Details for setting up the migration of your Track and Plan work items",
 	"items" : [
-		{
-		  "type": "string",
-		  "title": "OTC v2 uses Git issues for issue tracking."	
-		}
+		 {
+			"type": "selectfieldset",
+			"key": "migrateTAndP",
+			"readonly": true,
+			"title-map": {
+				 "Yes" : "Yes",
+				 "No" : "No"
+			},
+			"items": [{
+			       "type" : "section",
+			       "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
+			       "items" : ["query", "labels"]
+			       }, {
+			       "type" : "section",
+			       "description" : "You opted not to migrate RTC Work-items to Github issues."
+			       }]
+	      }
 	
 	]
-      }, {
-        "type": "selectfieldset",
-        "key": "migrateTAndP",
-        "readonly": true,
-        "title-map": {
-                 "Yes" : "Yes",
-                 "No" : "No"
-        },
-        "items": [{
-               "type" : "section",
-               "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
-               "items" : ["query", "labels"]
-               }, {
-               "type" : "section",
-               "description" : "You opted not to migrate RTC Work-items to Github issues."
-               }]
       }
     ],
     "actions": {        
