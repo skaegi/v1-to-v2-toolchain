@@ -32,10 +32,10 @@
       },
       "query": {
              "type": "string",
-             "title": "RTC Query",
+             "title": "You can select which WI can be transferred by specifying the name of a RTC Query. Click here for details",
 	     "description": "Work-items will be selected based on this query."
       },
-      "labels": {
+      "labelz": {
         "type": "object",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
@@ -69,10 +69,12 @@
 	"items" : [
 		{
 		  "type": "label",
+		  "key": "lab1",
 		  "title": "OTC v2 uses Git issues for issue tracking."	
 		},
 		{
 		  "type": "label",
+	          "key": "lab2",
 		  "title": "To keep your existing Track and Plan data it must be transferred to Git issues now."	
 		},
 		 {
