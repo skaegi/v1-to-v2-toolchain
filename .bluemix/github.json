@@ -1,0 +1,87 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Github link",
+    "description": "Github link schema",
+    "longDescription": "Store your source code in an existing repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
+    "type": "object",
+    "properties": {
+      "repo_url": {
+          "type": "string",
+          "title": "Source repository URL"
+      },
+      "existing_repo_url": {
+          "type": "string",        
+          "title": "Source repository URL"
+      },    
+      "type": {
+        "type": "string",
+        "title": "Repository type",
+        "default": "Existing"
+      },
+      "has_issues": {
+		"title": "Enable GitHub Issues",
+		"description": "Enable GitHub's Issues page for lightweight issue tracking.",
+		"type": "boolean",
+		"default": true
+      },
+      "migrateTAndP": {
+      		"title": "Do you wish to migrate Track & Plan work-items to Github Issues",
+		"description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
+		"type": "boolean",
+		"default": true
+      },
+      "query": {
+        "type": "string",
+        "title": "RTC Query",
+	"description": "Work-items will be selected based on this query."
+      },
+      "labels": {
+        "type": "object",
+        "properties": {
+          "type": {"title": "type", "type": "boolean"},
+          "severity": {"title": "severity", "type": "boolean"},
+          "state": {"title": "state", "type": "boolean"},
+          "priority": {"title": "priority", "type": "boolean"},
+          "resolution": {"title": "resolution", "type": "boolean"},
+          "filedAgainst": {"title": "filedAgainst", "type": "boolean"},
+          "tags": {"title": "tags", "type": "boolean"}
+      }
+    },
+    "form": [        
+      {
+        "type": "validator",
+        "url": "/devops/setup/bm-helper/github_helper.html"
+      },  
+      {
+        "type": "string",
+        "key": "type",
+        "readonly": true
+      }, {
+      	"description": "The repository that your toolchain will link to.",
+      	"type": "string",
+      	"key": "existing_repo_url",
+      	"readonly": true
+      }, {
+	"type": "selectfieldset",
+	"key": "migrateTAndP",
+	"readonly": false,
+	"title-map": {
+	         "yes" : "Yes",
+	         "no" : "No"
+	},
+	"items": [{
+	       "type" : "section",
+	       "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
+	       "items" : ["query", "labels"]
+	}, {
+	       "type" : "section",
+	       "description" : "You opted not to migrate RTC Work-items to Github issues."
+	}]
+      },
+      "query",
+      "labels"
+    ],
+    "actions": {        
+        "update": ["repo_url","has_issues"]
+    }
+}
