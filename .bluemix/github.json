@@ -28,7 +28,7 @@
       	            "title": "Do you wish to migrate Track & Plan work-items to Github Issues",
 	            "description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
 	            "type": "boolean",
-	            "default": true
+	            "enum": ["yes", "no"]
       },
       "query": {
              "type": "string",
