@@ -35,7 +35,7 @@
              "title": "You can select which WI can be transferred by specifying the name of a RTC Query. Click here for details",
 	     "description": "Work-items will be selected based on this query."
       },
-      "labelz": {
+      "labels": {
         "type": "object",
 	"title": "Git issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new Git issues here:",
         "properties": {
@@ -89,7 +89,7 @@
 			"items": [{
 			       "type" : "section",
 			       "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
-			       "items" : ["query", "labelz"]
+			       "items" : ["query", "labels"]
 			       }, {
 			       "type" : "label",
 			       "description" : "Track & Plan data will be lost."
