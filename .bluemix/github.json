@@ -70,13 +70,9 @@
 	"items" : [
 		{
 		  "type": "label",
-		  "key": "lab1",
-		  "title": "OTC v2 uses Git issues for issue tracking."	
-		},
-		{
-		  "type": "label",
-	          "key": "lab2",
-		  "title": "To keep your existing Track & Plan data it must be transferred to Git issues now."	
+		  "key": "desc",
+		  "title": "OTC v2 uses Git issues for issue tracking.  
+			To keep your existing Track & Plan data it must be transferred to Git issues now."	
 		},
 		 {
 			"type": "selectfieldset",
