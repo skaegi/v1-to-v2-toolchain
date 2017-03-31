@@ -64,7 +64,7 @@
       	"key": "existing_repo_url",
       	"readonly": true
       },{
-      	"type": "section",
+      	"type": "group",
 	"title": "Track & Plan Migration",
 	"description": "Details for setting up the migration of your Track & Plan work items",
 	"items" : [
