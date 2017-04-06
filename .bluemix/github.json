@@ -37,7 +37,7 @@
       },
       "labels": {
         "type": "object",
-	"title": "GitHub issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new GitHub issues here:",
+	      "title": "GitHub issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new GitHub issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
