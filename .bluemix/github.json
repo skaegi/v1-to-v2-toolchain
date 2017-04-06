@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Github link",
     "description": "Github link schema",
-    "longDescription": "Store your source code in a new Git repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Store your source code in an existing Git repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
       "repo_url": {
@@ -37,7 +37,7 @@
       },
       "labels": {
         "type": "object",
-	"title": "Git issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new GitHub issues here",
+	      "title": "GitHub issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new GitHub issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -71,9 +71,9 @@
 		{
 		  "type": "label",
 		  "key": "desc",
-		  "title": "OTC v2 uses Git Issues for Issue tracking.  
+		  "title": "Your newly created toolchain uses GitHub Issues for Issue tracking.  
 			      
-			To keep your existing Track & Plan data it must be transferred to Git Issues now. [Detailed info available here](https://www.google.com)"	
+			To keep your existing Track & Plan data it must be transferred to GitHub Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
 		},
 		 {
 			"type": "selectfieldset",
@@ -89,7 +89,7 @@
 			       "items" : ["query", "labels"]
 			       }, {
 			       "type" : "label",
-			       "description" : "Track & Plan data will be lost."
+			       "description" : "Track & Plan data will not be migrated."
 			       }]
 	      }
 	
