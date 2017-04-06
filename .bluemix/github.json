@@ -89,7 +89,7 @@
 			       "items" : ["query", "labels"]
 			       }, {
 			       "type" : "label",
-			       "description" : "Track & Plan data will be lost."
+			       "description" : "Track & Plan data will not be migrated."
 			       }]
 	      }
 	
