@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Github link",
     "description": "Github link schema",
-    "longDescription": "Store your source code in an existing repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Store your source code in a new Git repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
       "repo_url": {
@@ -25,18 +25,19 @@
 		"default": true
       },
       "migrateTAndP": {
-      	            "title": "Do you wish to migrate Track & Plan work-items to Github Issues",
-	            "description": "Track & Plan work-items will be created as GitHub's Issues in the existing repository",
+      	            "title": "Do you wish to migrate Track & Plan work-items to Git Issues",
+	            "description": "Track & Plan work-items will be created as Git Issues in the existing repository",
 	            "type": "boolean",
 	            "enum": ["Yes", "No"]
       },
       "query": {
              "type": "string",
-             "title": "RTC Query",
+             "title": "You can select which WI can be transferred by specifying the name of a RTC Query. Click here for details",
 	     "description": "Work-items will be selected based on this query."
       },
       "labels": {
         "type": "object",
+	"title": "Git issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new Git issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -62,22 +63,37 @@
       	"type": "string",
       	"key": "existing_repo_url",
       	"readonly": true
-      }, {
-        "type": "selectfieldset",
-        "key": "migrateTAndP",
-        "readonly": true,
-        "title-map": {
-                 "Yes" : "Yes",
-                 "No" : "No"
-        },
-        "items": [{
-               "type" : "section",
-               "description" : "Select the appropriate RTC Query & Labels based on which work-item migration will be carried out.",
-               "items" : ["query", "labels"]
-               }, {
-               "type" : "section",
-               "description" : "You opted not to migrate RTC Work-items to Github issues."
-               }]
+      },{
+      	"type": "group",
+	"title": "Track & Plan Migration",
+	"description": "Details for setting up the migration of your Track & Plan work items",
+	"items" : [
+		{
+		  "type": "label",
+		  "key": "desc",
+		  "title": "OTC v2 uses Git Issues for Issue tracking.  
+			      
+			To keep your existing Track & Plan data it must be transferred to Git Issues now. [Detailed info available here](https://www.google.com)"	
+		},
+		 {
+			"type": "selectfieldset",
+			"key": "migrateTAndP",
+			"readonly": true,
+			"title-map": {
+				 "Yes" : "Yes",
+				 "No" : "No"
+			},
+			"items": [{
+			       "type" : "section",
+			       "description" : "",
+			       "items" : ["query", "labels"]
+			       }, {
+			       "type" : "label",
+			       "description" : "Track & Plan data will be lost."
+			       }]
+	      }
+	
+	]
       }
     ],
     "actions": {        
