@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Github link",
     "description": "Github link schema",
-    "longDescription": "Store your source code in a new Git repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
+    "longDescription": "Store your source code in an existing Git repository on GitHub.com and engage in social coding through wikis, issue tracking, and pull requests.",
     "type": "object",
     "properties": {
       "repo_url": {
