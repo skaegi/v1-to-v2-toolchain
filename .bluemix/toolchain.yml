@@ -3,11 +3,17 @@ template:
   name: Upgrade to Toolchain
   description: |2-
      A toolchain is an open, extensible system of tools that supports the development, deployment, and operations of an application.
+    
+    
     #### About the Upgrade Process
      When you create this toolchain, it is preconfigured with IBM hosted Git for source control, Delivery Pipeline for building and deployment, and the Eclipse Orion Web IDE for code editing. You can add more tools to the toolchain as needed. To get started, click **Create**.
+    
+    
     #### More Info
      [Tutorial: Upgrade your project to a toolchain](https://ibm.biz/ids-upgrade-blogpost)
+     
      [Docs: Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html)
+     
      [Blog: Bluemix Continuous Delivery](https://www.ibm.com/blogs/bluemix/2016/11/bluemix-continuous-delivery-is-now-live/)
      
   header: '![](toolchain.svg)'
