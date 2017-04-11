@@ -87,7 +87,7 @@
 			       "type" : "section",
 			       "description" : "",
 			       "items" : [{
-             				"type": "string",
+             				"type": "label",
              				"title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
 	     				"description": "Work Items will be selected based on this Query (from Shared Queries)."
       					}, 
