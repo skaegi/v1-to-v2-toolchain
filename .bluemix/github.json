@@ -32,7 +32,6 @@
       },
       "query": {
              "type": "string",
-             "title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
 	     "description": "Work Items will be selected based on this Query (from Shared Queries)."
       },
       "labels": {
@@ -88,9 +87,8 @@
 			       "description" : "",
 			       "items" : [{
              				"type": "string",
-				        "key" : "desc",
-             				"title": "Specify the name of the [Track n Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
-	     				"description": "Work Items will be selected based on this Query (from Shared Queries)."
+				        "key" : "query",
+             				"title": "Specify the name of the [Track and Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated"
       					}, 
 					"labels"]
 			       }, {
