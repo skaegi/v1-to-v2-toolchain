@@ -91,6 +91,7 @@
 				        "description": "Work Items will be selected based on this Query (from Shared Queries)."
       					},{
 					"type": "string",
+					"key": "query"
 					},
 					"labels"]
 			       }, {
