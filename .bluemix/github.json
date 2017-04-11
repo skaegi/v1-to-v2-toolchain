@@ -31,7 +31,8 @@
 	            "enum": ["Yes", "No"]
       },
       "query": {
-             "type": "string"
+             "type": "string",
+	     "default": "Enter RTC shared query"
       },
       "labels": {
         "type": "object",
