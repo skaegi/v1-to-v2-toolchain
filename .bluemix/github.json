@@ -25,19 +25,19 @@
 		"default": true
       },
       "migrateTAndP": {
-      	            "title": "Do you wish to migrate Track & Plan work-items to Git Issues",
-	            "description": "Track & Plan work-items will be created as Git Issues in the existing repository",
+      	            "title": "Do you wish to migrate Track & Plan Work Items to GitHub Issues?",
+	            "description": "Track & Plan Work Items will be created as GitHub Issues in the existing repository",
 	            "type": "boolean",
 	            "enum": ["Yes", "No"]
       },
       "query": {
              "type": "string",
-             "title": "You can select which WI can be transferred by specifying the name of a RTC Query. Click here for details",
-	     "description": "Work-items will be selected based on this query."
+             "title": "Specify the name of the Track & Plan Query to select the Work Items to be migrated",
+	     "description": "Work Items will be selected based on this Query (from Shared Queries)."
       },
       "labels": {
         "type": "object",
-	"title": "Git issues uses labels to track attributes. You can select which Track & Plan WI attributes to map to labels in your new Git issues here:",
+        "title": "GitHub Issues use labels to track attributes. You can select which Track & Plan Work Item attributes to map to labels in your new GitHub Issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -71,9 +71,9 @@
 		{
 		  "type": "label",
 		  "key": "desc",
-		  "title": "OTC v2 uses Git Issues for Issue tracking.  
+		  "title": "Your newly created toolchain uses GitHub Issues for Issue tracking.  
 			      
-			To keep your existing Track & Plan data it must be transferred to Git Issues now. [Detailed info available here](https://www.google.com)"	
+			To keep your existing Track & Plan data it must be transferred to GitHub Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
 		},
 		 {
 			"type": "selectfieldset",
@@ -89,7 +89,7 @@
 			       "items" : ["query", "labels"]
 			       }, {
 			       "type" : "label",
-			       "description" : "Track & Plan data will be lost."
+			       "description" : "Track & Plan data will not be migrated."
 			       }]
 	      }
 	
