@@ -32,7 +32,8 @@
       },
       "query": {
              "type": "string",
-	     "default": "Enter RTC shared query"
+	     "title": "Enter RTC shared query"
+	     "default": ""
       },
       "labels": {
         "type": "object",
