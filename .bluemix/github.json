@@ -31,8 +31,7 @@
 	            "enum": ["Yes", "No"]
       },
       "query": {
-             "type": "string",
-	     "description": "Work Items will be selected based on this Query (from Shared Queries)."
+             "type": "string"
       },
       "labels": {
         "type": "object",
@@ -88,8 +87,12 @@
 			       "items" : [{
              				"type": "label",
 				        "key" : "desc",
-             				"title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated"
-      					}, 
+             				"title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
+				        "description": "Work Items will be selected based on this Query (from Shared Queries)."
+      					},{
+					"type": "string",
+					"key": "query"
+					},
 					"labels"]
 			       }, {
 			       "type" : "label",
