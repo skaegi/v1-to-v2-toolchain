@@ -48,7 +48,8 @@
       },
       "query": {
              "type": "string",
-	     "title": "Enter RTC shared query",
+	     "title": "",
+	     "placeholder": "Track & Plan Query",
 	     "default": ""
       },
       "labels": {
