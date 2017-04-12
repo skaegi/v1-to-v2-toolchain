@@ -44,6 +44,11 @@ services:
       has_issues: true
       private_repo: '{{form.hostedgit.parameters.private_repo}}'
       enable_traceability: '{{form.hostedgit.parameters.enable_traceability}}'
+      track_and_plan:
+        query: '{{form.githubpublic.parameters.query}}'
+        labels: '{{form.githubpublic.parameters.labels}}'
+        migrateTAndP: '{{form.githubpublic.parameters.migrateTAndP}}'
+
   build:
     service_id: pipeline
     parameters:
@@ -71,5 +76,15 @@ form:
       repo_name: '{{repoName}}'
       private_repo: '{{privateRepo}}'
       enable_traceability: false
+      migrateTAndP: '{{migrateTAndP}}'
+      query: ""
+      labels:
+        type: true
+        severity: true
+        state: true
+        priority: true
+        resolution: true
+        filedAgainst: true
+        tags: true
     schema:
       $ref: github.json
