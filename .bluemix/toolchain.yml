@@ -45,9 +45,9 @@ services:
       private_repo: '{{form.hostedgit.parameters.private_repo}}'
       enable_traceability: '{{form.hostedgit.parameters.enable_traceability}}'
       track_and_plan:
-        query: '{{form.githubpublic.parameters.query}}'
-        labels: '{{form.githubpublic.parameters.labels}}'
-        migrateTAndP: '{{form.githubpublic.parameters.migrateTAndP}}'
+        query: '{{form.hostedgit.parameters.query}}'
+        labels: '{{form.hostedgit.parameters.labels}}'
+        migrateTAndP: '{{form.hostedgit.parameters.migrateTAndP}}'
 
   build:
     service_id: pipeline
