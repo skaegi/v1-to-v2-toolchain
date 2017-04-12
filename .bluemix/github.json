@@ -66,7 +66,7 @@
       },{
       	"type": "group",
 	"title": "Track & Plan Migration",
-	"description": "Details for setting up the migration of your Track & Plan work items",
+	"description": "Details for setting up the migration of your Track & Plan Work Items",
 	"items" : [
 		{
 		  "type": "label",
@@ -90,7 +90,7 @@
              				"type": "label",
 				        "key" : "desc",
              				"title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
-				        "description": "Work Items will be selected based on this Query (from Shared Queries)."
+				        "description": "Work Items will be selected based on this Query (from Shared Queries). If Query is not specified, all Work Items are selected."
       					},{
 					"type": "string",
 					"key": "query",
