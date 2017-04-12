@@ -32,7 +32,7 @@
       },
       "query": {
              "type": "string",
-	     "title": "Enter RTC shared query",
+	     "title": "Specify Track & Plan Query",
 	     "default": ""
       },
       "labels": {
