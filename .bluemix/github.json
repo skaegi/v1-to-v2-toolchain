@@ -48,7 +48,7 @@
       },
       "query": {
              "type": "string",
-	     "title": "",
+	     "title": "Enter RTC Query",
 	     "placeholder": "Track & Plan Query",
 	     "default": ""
       },
