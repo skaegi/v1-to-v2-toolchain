@@ -71,9 +71,7 @@
 		{
 		  "type": "label",
 		  "key": "desc",
-		  "title": "Your newly created toolchain uses GitHub Issues for Issue tracking.  
-			      
-			To keep your existing Track & Plan data it must be transferred to GitHub Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
+		  "title": "Your newly created toolchain uses GitHub Issues for Issue tracking.\n\nTo keep your existing Track & Plan data it must be transferred to GitHub Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
 		},
 		 {
 			"type": "selectfieldset",
