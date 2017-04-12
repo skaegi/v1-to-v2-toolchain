@@ -24,6 +24,7 @@ toolchain:
     v1-projectId: '{{projectId}}'
     scheduledDate: '{{scheduledDate}}'
     v1-pipelineStages: '{{v1PipelineStages}}'
+    v1-projectName: '{{v1ProjectName}}'
     v1-ProjectPublicVisibility: '{{v1ProjectPublicVisibility}}'
     getting_started: >-
       This toolchain was created from your [DevOps Services
