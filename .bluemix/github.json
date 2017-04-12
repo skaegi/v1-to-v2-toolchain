@@ -29,8 +29,8 @@
          "default": true
       },	    
       "has_issues": {
-		"title": "Enable GitHub Enterprise Issues",
-		"description": "Enable GitHub Enterprise Issues page for lightweight issue tracking.",
+		"title": "Enable GitLab Issues",
+		"description": "Enable GitLab Issues page for lightweight issue tracking.",
 		"type": "boolean",
 		"default": true
       },
@@ -41,20 +41,19 @@
 	      "default": true
       },
       "migrateTAndP": {
-      	      "title": "Do you wish to migrate Track & Plan Work Items to GitHub Issues?",
-	      "description": "Track & Plan Work Items will be created as GitHub Issues in the existing repository",
+      	      "title": "Do you wish to migrate Track & Plan Work Items to GitLab Issues?",
+	      "description": "Track & Plan Work Items will be created as GitLab Issues in your newly created repository",
 	      "type": "boolean",
 	      "enum": ["Yes", "No"]
       },
       "query": {
              "type": "string",
-	     "title": "Enter RTC Query",
-	     "placeholder": "Track & Plan Query",
+	     "title": "Specify Track & Plan Query",
 	     "default": ""
       },
       "labels": {
         "type": "object",
-        "title": "GitHub Issues use labels to track attributes. You can select which Track & Plan Work Item attributes to map to labels in your new GitHub Issues here:",
+        "title": "GitLab Issues use labels to track attributes. You can select which Track & Plan Work Item attributes to map to labels in your new GitLab Issues here:",
         "properties": {
           "type": {"title": "type", "type": "boolean"},
           "severity": {"title": "severity", "type": "boolean"},
@@ -86,14 +85,14 @@
       {
       	"type": "group",
 	"title": "Track & Plan Migration",
-	"description": "Details for setting up the migration of your Track & Plan work items",
+	"description": "Details for setting up the migration of your Track & Plan Work Items",
 	"items" : [
 		{
 		  "type": "label",
 		  "key": "desc",
-		  "title": "Your newly created toolchain uses GitHub Issues for Issue tracking.  
+		  "title": "Your newly created toolchain uses GitLab Issues for Issue tracking.  
 			      
-			To keep your existing Track & Plan data it must be transferred to GitHub Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
+			To keep your existing Track & Plan data it must be transferred to GitLab Issues now. [Detailed info available here](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html)"	
 		},
 		{
 			"type": "selectfieldset",
@@ -110,7 +109,7 @@
              				"type": "label",
 				        "key" : "desc",
              				"title": "Specify the name of the [Track & Plan Query]({{rtcSharedQueriesLink}}) to select the Work Items to be migrated",
-				        "description": "Work Items will be selected based on this Query (from Shared Queries)."
+				        "description": "Work Items will be selected based on this Query (from Shared Queries). If Query is not specified, all Work Items are selected."
       					},{
 					"type": "string",
 					"key": "query",
