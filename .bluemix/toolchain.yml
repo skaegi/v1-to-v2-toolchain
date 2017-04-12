@@ -24,6 +24,7 @@ toolchain:
     v1-projectId: '{{projectId}}'
     scheduledDate: '{{scheduledDate}}'
     v1-pipelineStages: '{{v1PipelineStages}}'
+    v1-ProjectPublicVisibility: '{{v1ProjectPublicVisibility}}'
     getting_started: >-
       This toolchain was created from your [DevOps Services
       project]({{projectUrl}}). Before you start to use the toolchain, complete
@@ -69,6 +70,6 @@ form:
       existing_repo_url: '{{projectRepoUrl}}'
       repo_name: '{{repoName}}'
       private_repo: '{{privateRepo}}'
-      enable_traceability: true
+      enable_traceability: false
     schema:
       $ref: github.json
