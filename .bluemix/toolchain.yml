@@ -23,7 +23,7 @@ toolchain:
     scheduledDate: '{{scheduledDate}}'
     getting_started: >-
       **Quick start:** This toolchain was created from your [DevOps Services project]({{projectUrl}}).
-      Before you start to use the toolchain, complete a few [next steps](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html#upgrade_next_steps).
+      Before you use the toolchain, verify the status of your upgrade by completing [these steps](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/upgrade_projects.html#upgrade_next_steps).
       To learn more about toolchains, see [Getting started with Continuous Delivery](https://console.ng.bluemix.net/docs/services/ContinuousDelivery/index.html?pos=2).
   name: '{{projectName}}'
   required:
